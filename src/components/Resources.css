@@ -1,0 +1,11 @@
+.resources {
+    background-color: orange;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  .resources__header {
+    font-size: 36px;
+    font-weight: 500;
+  }

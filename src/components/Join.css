@@ -1,0 +1,40 @@
+.join {
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  .join__header {
+    font-size: 36px;
+    font-weight: 500;
+  }
+  .join__content {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px;
+  }
+  .row__join {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .media {
+    height: 100px;
+    width: 100px;
+    background-color: #f5f6fa;
+    border-radius: 50px;
+    text-align: center;
+    margin: 30px;
+    line-height: 110px;
+    box-shadow: 1px 4px 2px 2px #dcdde1;
+    opacity: 80%;
+  }
+  
+  .media:hover {
+    margin-top: 30px;
+    cursor: pointer;
+    opacity: 100%;
+    box-shadow: 0px 12px 30px 0px rgba(0, 0, 0, 0.2);
+    transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  

@@ -1,0 +1,16 @@
+.about {
+    background-color: #e9ecef;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+  }
+  .about__header {
+    font-size: 36px;
+    font-weight: 500;
+  }
+  .about__content {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px;
+  }
