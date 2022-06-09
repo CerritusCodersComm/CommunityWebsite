@@ -1,19 +1,19 @@
 const data = [
   {
-    text: "Web Development",
-    date: "DD/MM/YYYY",
+    text: "Android App Development",
+    date: "04/06/2022",
   },
   {
-    text: "Android App Development",
-    date: "DD/MM/YYYY",
+    text: "Web Development",
+    date: "11/06/2022",
   },
   {
     text: "Blockchain Development",
-    date: "DD/MM/YYYY",
+    date: "18/06/2022",
   },
   {
     text: "Discord Bot using python",
-    date: "DD/MM/YYYY",
+    date: "25/06/2022",
   },
 ];
 export default data;

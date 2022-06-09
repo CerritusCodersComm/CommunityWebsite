@@ -8,10 +8,10 @@ function Events() {
     <div>
       <section class="events timeline">
         <h1 class="events__header">Events</h1>
-        {/* <div class="timeline"> */}
-        {/* <p>Here are the details of our upcoming bootcamp this summer</p>
-        <Timeline /> */}
-        {/* </div> */}
+        {/* <div class="timeline">
+          <p>Here are the details of our upcoming bootcamp this summer</p>
+          <Timeline />
+        </div> */}
         <div class="bootcamp_box box">
           <img alt="img" src={bootcamp} class="bootcamp"></img>
           <h3> Summer Bootcamp</h3>
