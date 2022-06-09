@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.timeline-container {
+  width: 400px;
+  /* background-color: #fff; */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 40px 0;
+}
+.timeline-container::after {
+  background-color: #e17b77;
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  left: calc(50% - 2px);
+}
