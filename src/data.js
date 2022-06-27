@@ -8,11 +8,11 @@ const data = [
     date: "11/06/2022",
   },
   {
-    text: "Blockchain Development",
+    text: "Discord Bot using Python",
     date: "18/06/2022",
   },
   {
-    text: "Discord Bot using python",
+    text: "Blockchain Development",
     date: "25/06/2022",
   },
 ];

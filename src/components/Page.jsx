@@ -1,40 +1,32 @@
-<<<<<<< HEAD
 import "./Page.css";
 import React from "react";
-import About from "./About";
+import About_img from "./About_img";
+import About_text from "./About_text";
 import Resources from "./Resources";
 import Events from "./Events";
 import Join from "./Join";
+import Team from "./Team";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 function Page() {
   return (
     <div>
-      <About />
-      <Resources />
+      <Navbar about="#about" events="#events" team="#team" join="#join" />
+      <div className="about_cards">
+        <div className="img">
+          <About_img />
+        </div>
+        <div className="text">
+          <About_text />
+        </div>
+      </div>
+      {/* <Resources /> */}
       <Events />
+      <Team />
       <Join />
+      <Footer />
     </div>
   );
-=======
-
-import './Page.css'
-import React from 'react';
-import About from './About';
-import Resources from './Resources';
-import Events from './Events';
-import Join from './Join';
-import Team from './Team';
-
-function Page() {
-    return (
-        <div>
-            <About />
-            <Resources />
-            <Events />
-            <Team/>
-            <Join />
-        </div>
-    )
->>>>>>> e9de7a5 (added team cards)
 }
 export default Page;

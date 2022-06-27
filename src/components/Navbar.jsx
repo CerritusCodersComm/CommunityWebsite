@@ -1,69 +1,62 @@
-import React, { useState, useEffect } from 'react'
-import './Navbar.css'
-import assets from "../assets/logo_5.png"
+import React, { useState, useEffect, Component } from "react";
+import "./Navbar.css";
+import assets from "../assets/logo_5.png";
+import { BrowserRouter as Router, Route, Link, NavLink, Switch } from "react-router-dom";
+import PropTypes from "prop-types";
 
-function Navbar() {
-  const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
-  const [navbar, setNavbar] = useState(false);
-
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
-
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
+export default class Navbar extends Component {
+  static propTypes = {
+    about: PropTypes.string,
+    events: PropTypes.string,
+    team: PropTypes.string,
+    join: PropTypes.string,
   };
 
-  useEffect(() => {
-    showButton()
-  }, [button]);
-
-  window.addEventListener('resize', showButton);
-
-  const changeBackground = () => {
-    if (window.scrollY >= window.innerHeight - 80) {
-      setNavbar(true);
-    } else {
-      setNavbar(false);
-    }
-  };
-
-  // const openGithub = () => {
-  //     window.open(GITHUB_PROJECT_URL)
-  // }
-
-  window.addEventListener('scroll', changeBackground)
-
-  return (
-    <>
-      <nav class="nav">
-        <img src={assets} alt="Community logo" class="nav__logo" id="logo" />
-        <div class="links">
-          <ul class="nav__links">
-            <li class="nav__item">
-              <a class="nav__link" href="#about">About</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#resources">Resources</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#events">Events</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link nav__link--btn" href="#team">Team</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link nav__link--btn" href="#join">Join</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </>
-  )
+  render() {
+    return (
+      <>
+        <html>
+          <script src="https://kit.fontawesome.com/b7d39afe84.js" crossorigin="anonymous"></script>
+          <nav class="nav">
+            <Link to="/">
+              <img src={assets} alt="Community logo" class="nav__logo" id="logo" />
+            </Link>
+            <div class="links">
+              <ul class="nav__links">
+                <li class="nav__item">
+                  <a class="nav__link" href={this.props.about}>
+                    About
+                  </a>
+                </li>
+                {/* <li class="nav__item">
+              <a class="nav__link" href="#resources">
+                Resources
+              </a>
+            </li> */}
+                <li class="nav__item">
+                  <a class="nav__link nav__link--btn" href={this.props.events}>
+                    {/* <Link to="#events">Event</Link> */}
+                    Events
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href={this.props.team}>
+                    Team
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link nav__link--btn" href={this.props.join}>
+                    Join
+                  </a>
+                </li>
+                {/* <li>
+                  <i class="fa-solid fa-bars"></i>
+                </li> */}
+              </ul>
+            </div>
+          </nav>
+        </html>
+      </>
+    );
+  }
 }
-
-export default Navbar
