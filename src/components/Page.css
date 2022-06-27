@@ -9,8 +9,15 @@ body {
   line-height: 1.9;
   background-color: #f3f3f3;
 }
-
-
+.about_cards {
+  display: flex;
+}
+.img {
+  flex: 5;
+}
+.text {
+  flex: 5;
+}
 /* .nav__link--btn {
   background-color: #365b6d;
   padding: 0.4rem 1rem;

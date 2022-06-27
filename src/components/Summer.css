@@ -1,0 +1,40 @@
+/* .timeline {
+  display: flex;
+  flex-direction: row;
+} */
+* {
+  margin: 0;
+  padding: 0;
+}
+.e {
+  flex: 5;
+}
+.o {
+  flex: 5;
+}
+
+/* .one {
+  grid-row: 2/2;
+} */
+/* 
+.event1 {
+  display: flex;
+} */
+.events {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  /* height: 1000px; */
+  margin-bottom: 1000px;
+}
+.time {
+  display: flex;
+  /* min-height: 1500px; */
+}
+.one {
+  margin-right: 100px;
+}
+h1 {
+  align-items: center;
+  text-align: center;
+}
