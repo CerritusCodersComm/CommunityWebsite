@@ -74,3 +74,11 @@ a:link {
 }
 /* .register {
 } */
+@media (max-width: 520px) {
+  .box {
+    width: 400px;
+  }
+  .bootcamp {
+    width: 400px;
+  }
+}

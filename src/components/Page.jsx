@@ -12,6 +12,7 @@ import Footer from "./Footer";
 function Page() {
   return (
     <div>
+      {/* <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */}
       <Navbar about="#about" events="#events" team="#team" join="#join" />
       <div className="about_cards">
         <div className="img">

@@ -5,7 +5,6 @@ function About_text() {
   return (
     <div className="about" id="about">
       <div>
-        {" "}
         <div className="box2">
           <h2 className="about__header">About</h2>
           <p className="about_content">

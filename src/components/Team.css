@@ -23,8 +23,22 @@
 .row {
   display: flex;
 }
-/* @media screen and (max-width: 500px) {
+@media (max-width: 1200px) {
+  .team {
+    height: 1200px;
+  }
+  .column {
+    width: 50%;
+  }
+  .row {
+    gap: 10px;
+  }
+}
+@media (max-width: 768px) {
   .column {
     width: 100%;
   }
-} */
+  .team {
+    height: 2400px;
+  }
+}

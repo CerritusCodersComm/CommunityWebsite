@@ -18,7 +18,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" exact element={<Page />} />
-          <Route path="/summer" element={<Summer />} />
+          <Route path="/summerbootcamp" element={<Summer />} />
           <Route path="/about" element={<About_text />} />
           <Route path="/team" element={<Team />} />
           <Route path="#events" element={<Page />} />

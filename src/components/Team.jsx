@@ -1,9 +1,9 @@
 import React from "react";
 import Card from "./Card";
 import "./Team.css";
-import dhiraj from "../assets/team/dhiraj.jpg";
+import dhiraj from "../assets/team/dhiraj-new.jpg";
 import ishir from "../assets/team/ishir.jpg";
-import anam from "../assets/team/anam.jpg";
+import anam from "../assets/team/anam-new.jpeg";
 import lurid from "../assets/team/lurid.jpg";
 
 function Team() {
@@ -20,7 +20,7 @@ function Team() {
             bio="She loves to explore new technologies and wants to make an impact with the knowledge and experience she gets.
                         Android development is one of her passions, and she's lately begun dabbling in blockchain and web development."
             linkedin="https://linkedin.com/in/anamansari062"
-            twitter="https://twitter.com/eraserhead02"
+            twitter="https://twitter.com/anamansari062"
             link="https://linktr.ee/anamansari062"
           />
         </div>

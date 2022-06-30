@@ -18,6 +18,19 @@ body {
 .text {
   flex: 5;
 }
+@media (max-width: 964px) {
+  .about_cards {
+    display: block;
+  }
+  .img {
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+@media (max-width: 520px) {
+}
 /* .nav__link--btn {
   background-color: #365b6d;
   padding: 0.4rem 1rem;
