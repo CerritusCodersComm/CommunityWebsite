@@ -10,12 +10,7 @@ import "./Summer.css";
 function Summer() {
   return (
     <div className="ishir">
-      <Navbar
-        about="http://localhost:3000/#about"
-        events="http://localhost:3000/#events"
-        team="http://localhost:3000/#team"
-        join="http://localhost:3000/#join"
-      />
+      <Navbar about="/" events="/" team="/" join="/" />
       <h1 className="head">Summer Bootcamp - 2k22</h1>
       {/* <div className="side"> */}
       <div className="time">
