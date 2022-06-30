@@ -6,6 +6,8 @@ export default class EventCard extends Component {
   static propTypes = {
     image: PropTypes.string,
     heading: PropTypes.string,
+    summary: PropTypes.string,
+    video: PropTypes.string,
   };
   render() {
     return (
@@ -15,11 +17,17 @@ export default class EventCard extends Component {
           <h3 className="head">{this.props.heading}</h3>
           <button class="summary info">
             {/* <Link to="/summer"> */}
-            <span className="more">Summary</span>
+            <span className="more">
+              <a href={this.props.summary} target="_blank">
+                Summary
+              </a>
+            </span>
             {/* </Link> */}
           </button>
           <button class="summary" id="reg">
-            Video
+            <a href={this.props.video} target="_blank">
+              Video
+            </a>
           </button>
         </div>
       </>

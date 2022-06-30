@@ -1,6 +1,6 @@
 .box1 {
   transition: box-shadow 0.3s;
-  width: 400px;
+  width: 380px;
   height: 200px;
   margin: 50px;
   border-radius: 10px;
@@ -33,4 +33,11 @@
   /* margin-right: 220px; */
   /* margin-top: 80px; */
   text-decoration: none;
+}
+.summary a {
+  text-decoration: none;
+  color: white;
+}
+.summary a:hover {
+  color: #000;
 }

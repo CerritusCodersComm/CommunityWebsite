@@ -13,7 +13,7 @@ function Events() {
   //   });
   // }
   const ale = function () {
-    alert("You have successfully registered for the event!");
+    alert("The registrations are now closed!");
   };
   return (
     <div>
@@ -28,7 +28,7 @@ function Events() {
           <h3> Summer Bootcamp</h3>
           {/* <input type="button" value="Learn More" class="btn"></input> */}
           <button class="bttn info">
-            <Link to="/summer">
+            <Link to="/summerbootcamp">
               <span className="more">More Info</span>
             </Link>
           </button>
