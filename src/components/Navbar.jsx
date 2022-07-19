@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Component } from "react";
 import "./Navbar.css";
-import assets from "../assets/logo_3.png";
+import assets from "../assets/logo_5.png";
 import { BrowserRouter as Router, Route, Link, NavLink, Switch } from "react-router-dom";
 import PropTypes from "prop-types";
 import { GiHamburgerMenu } from "react-icons/gi";
